@@ -1,0 +1,244 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.maincon {
+    display: flex;
+}
+
+.main {
+    margin-left: 23rem;
+    margin-top: 30px;
+}
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.mainHeader h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+
+.sideBar {
+    background-color: rgb(6, 6, 185);
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+.header--sb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 5px solid rgb(172, 172, 24);
+    height: 120px;
+    column-gap: 12px;
+    
+}
+
+.header--sb h1{
+    color:rgb(90, 1, 131);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.header--sb img {
+    width: 50px;
+    margin-left: 15px;
+}
+
+.itemLinks-sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dashboardSec {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    column-gap: 30px;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.recordSec{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    column-gap: 24px;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 5px;
+}
+
+.pendingSec {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    column-gap: 30px;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 25px;
+}
+
+.approvedSec {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    column-gap: 30px;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 25px;
+}
+
+.disapprovedSec {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    column-gap: 30px;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 25px;
+}
+
+.facultySec {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    column-gap: 30px;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-top: 30px;
+    background-color: rgba(0, 115, 255, 0.605);
+
+}
+
+.recordSec {
+    margin-top: 30px;
+}
+
+.dashboardSec:hover, .recordSec:hover, .facultySec:hover, .pendingSec:hover, .approvedSec:hover, .disapprovedSec:hover{
+    color: rgb(0, 128, 255);
+    cursor: pointer;
+}
+
+.recordSec img {
+    width: 40px
+}
+
+.dashboardSec img {
+    width: 30px;
+}
+
+.facultySec img {
+    width: 40px;
+}
+
+.accountSec {
+    display: flex;
+    align-items: center;
+    margin-top:  7rem;
+    column-gap: 10px;
+    margin-left: -10rem;
+}
+
+.accountSec img {
+    width: 24px;
+}
+
+#account {
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+/*==============================================*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+
+tr, td, th {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+tr {
+    height: 35px;
+    background-color: #fbfbfb;
+}
+
+tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+th{
+    background-color: rgb(7, 7, 159);
+    color: #fff;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+  
+th:last-child {
+    border-top-right-radius: 10px;
+}

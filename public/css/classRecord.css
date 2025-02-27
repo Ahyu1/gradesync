@@ -1,0 +1,293 @@
+
+
+.container {
+    padding: 40px;
+}
+.tableIframe {
+    width: 100%;
+    height: 80vh;
+    border: solid 2px rgb(2, 2, 135);
+    padding: 10px;
+    border-bottom: none;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 14px;
+    margin-top: 30px;
+    justify-content: end;
+}
+
+.buttons button{
+    padding: 10px 10px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.closePrev {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.closePrev:hover {
+    background-color: rgb(16, 16, 16);
+    color: #fff
+}
+
+.saveClassRecord {
+    background-color: rgb(4, 4, 225);
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.saveClassRecord:hover {
+    background-color: blue;
+}
+
+.downloadPDF {
+    background-color: rgb(240, 240, 27);
+    color: black;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.downloadPDF:hover {
+    background-color: rgba(255, 255, 6, 0.725);
+}
+
+.saveRemark {
+    background-color: rgb(2, 96, 210);
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.testing {
+    margin-top: 20px;
+}
+
+/*=======================================================for table testing=========================================*/
+* {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding:0;
+   }
+
+table, tr {
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: small;
+   }
+
+th {
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: small;
+   }
+
+td {
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: small;
+    width: 60px;
+}
+
+.studentnameLabel {
+    width: 300px;
+}
+
+.studentName {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.lrnLabel {
+    width: 250px;
+}
+
+.first-row {
+    height: 40px;
+}
+
+.second-row{
+    height: 35px;
+}
+
+.taskLabel, .taskNum, .hpsLabel, .dateLabel {
+    color: rgb(6, 124, 242);
+    font-weight: 600;
+}
+
+.hpsValue, .hpsValuePt{
+     color: rgb(6, 124, 242);
+}
+
+.wwHPS, .ptHPS, .examSubtotal, .wwDate, .ptDate {
+    color: rgb(6, 124, 242);
+}
+
+.subtotalLabel, .ratingsLabel, .wwSubtotal, .ptSubtotal {
+     color: rgb(155, 20, 155);
+}
+
+.wwSubtotal,
+.wwRatings,
+.ptSubtotal,
+.ptRatings,
+.examRatings,
+.wwSubtotalValue,
+.wwRatingsValue,
+.ptSubtotalValue,
+.ptRatingsValue,
+.examRatingsValue,
+.examSubtotalValue {
+    color: rgb(155, 20, 155);
+}
+
+.rateLabel,
+.wwComponentRate,
+.ptComponentRate,
+.examComponentRate,
+.wwRateValue,
+.ptRateValue,
+.examRateValue {
+    color: green;
+
+}
+
+.finalGrade {
+    font-weight: 600;
+}
+
+/*================================IFRAME TEST=========================*/
+.generate {
+    margin-top: 20px;
+}
+
+.thegreatestpreview {
+    background-color: rgb(217, 217, 220);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 90vw;
+    height: 40vh;
+}
+
+.ipreym {
+    width: 90vw;
+    height: 35vh;
+}
+
+.buttonSquad {
+    margin-top: 10px;
+}
+
+
+/*======================== SCC CLASS RECORD HEADER====================*/
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainHeader img {
+    width: 60px;
+}
+
+.tableContainer {
+    margin-top: 5px;
+}
+
+.schoolText {width: 270px;}
+.text {width: 210px; font-size: 15px; margin-top: 12px;}
+
+.left-header {
+    display: flex;
+    column-gap: 70px;
+    align-items: center;
+}
+
+.left-child {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.right-child {
+    display: flex;
+    column-gap: 25px;
+}
+
+.right-header .right-child {
+    display: flex;
+    column-gap: 50px;
+}
+
+.values p {font-weight: bolder;}
+
+.dept, .sensei, .sbjcode-sbj  {text-transform: uppercase;}
+
+.studentRow {
+    height: 20px;
+}
+
+/*============================SOD HEADER==============================*/
+
+.sodMainHeader {
+    margin-top: 30px;
+}
+
+.sodHeader {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.scclogo {width: 60px;}
+
+.sodContainer h5 {
+    font-weight: bolder;
+    font-size: 11px;
+}
+
+.empty {
+    height: 10px;
+}
+
+.plLabel {
+    width: 280px;
+}
+
+.freqLabel {
+    width: 170px;
+}
+
+.remarksLabel {
+    width: 240px;
+}
+
+.sodTable table tr td {
+    height: 50px;
+}
+
+.sodIframe {
+    width: 100%;
+    height: 80vh;
+    border: solid 2px rgb(2, 2, 135);
+    padding: 10px; 
+    border-top: none
+}
+
+hr { border: 1px solid; justify-content: center; margin-left: 15px;}
+
+/*====================*/
