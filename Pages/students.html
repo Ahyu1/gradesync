@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeSync: Students</title>
+    <link rel="icon" type="image/x-icon" href="/images/scclogo.webp">
+    <link rel="stylesheet" href="/css/students.css">
+</head>
+<body>
+    <div class="maincon"></div>
+    <div class="sideBar">
+        <div class="header--sb">
+            <img src="/images/scclogo.webp" alt="scclogo">
+            <h1>GRADESYNC: GRADE MANAGEMENT INFORMATION SYSTEM</h1>
+        </div>
+        <div class="itemLinks--sb">
+            <a class="homeSec" href="/main">
+                <img src="/images/graduate.png" alt="hlogo">
+                <h1>CLASS</h1>
+            </a>
+            <a class="recordSec" href="/recordPage">
+                <img src="/images/folder.png" alt="rlogo">
+                <h1>RECORDS</h1>
+            </a>
+            <a class="pendingSec" href="/pendingPage">
+                <img src="/images/pending.png" alt="rlogo">
+                <h1>SUBMITTED RECORDS</h1>
+            </a>
+            <a class="approvedSec" href="/approvedPage">
+                <img src="/images/approved.png" alt="rlogo">
+                <h1>APPROVED RECORDS</h1>
+            </a>
+            <a class="disapprovedSec" href="/disapprovedPage">
+                <img src="/images/rejected.png" alt="rlogo">
+                <h1>DISAPPROVED RECORDS</h1>
+            </a>
+        </div>
+        <div class="accountSec">
+            <img src="/images/profile-user.png" alt="accountlogo">
+            <!--<a href="/auth/logout">--><p class="account">Account/Logout</p>
+        </div>
+    </div>
+    <div class="main">
+        <button class="back"><img src="/images/back.png" alt="back-icon"></button>
+        <div class="mainHeader">
+            <div class="classSection">ICT5 - 12 OLIVET</div><!--TO FIX-->
+            <div class="mainHeaderBtns">
+                <!--<button id="sortStudent">SORT &#x25BC;</button>-->
+                <input type="text" class="searchStudentName" placeholder="&#128269; Search Student: ">
+            </div>
+        </div>
+        <!--
+        <label for="fileUpload">Import Student data:</label>
+        <input type="file" class="fileUpload" name="fileUpload" accept=".xls, .xlsx">
+        -->
+    </div>
+    <div class="studentDataContainer">
+        <table id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <th>LRN</th>
+                    <th>STUDENTS</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    
+    <script src="/javascript/students.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeSync: Preview Class Records</title>
+    <link rel="icon" type="image/x-icon" href="/images/scclogo.webp">
+    <link rel="stylesheet" href="/css/classRecord.css">
+</head>
+<body>
+    <div class="container">
+        <iframe class="tableIframe" src="about:blank"></iframe>
+        <hr>
+        <iframe class="sodIframe" src="about:blank"></iframe>
+        <div class="buttons">
+             <button class="closePrev">Close Preview</button>
+             <button class="saveClassRecord">Save Class Record</button>
+             <button class="downloadPDF">Download PDF</button>
+        </div>
+        <div class="sodContainer">
+            <!--
+            <div class="sodMainHeader">
+                <div class="sodHeader">
+                    <div class="left-header">
+                        <div class="left-child">
+                            <img class="scclogo" src="/images/scclogo.webp">
+                            <div>
+                                <h3 class="schoolText">SAMUEL CHRISTIAN COLLEGE OF GENERAL TRIAS, INC</h3>
+                                <p>Navarro, General Trias CIty, Cavite</p>
+                                <h2 class="text">HIGH SCHOOL DEPARTMENT CLASS RECORD</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-header">
+                        <div class="right-child">
+                            <div class="labels">
+                                <p>Department: </p>
+                                <p>School Year: </p>
+                                <p>Semester, Term: </p>
+                                <p>Subject Code, Title: </p>
+                                <p>Grade Level, Strand and Section:</p>
+                                <p>Teacher/Instructor: </p>
+                            </div>
+                            <div class="values">
+                                <p>SENIOR HIGH SCHOOL</p>
+                                <p>2024-2025</p>
+                                <p>2, 1</p>
+                                <p class="sbjcode-sbj">${classDetails.subjectCode} - ${classDetails.subjectTitle}</p>
+                                <p>${classDetails.year} ${classDetails.section}</p>
+                                <p class="sensei">${teacher.name}</p>
+                            </div>  
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <h5>SUMMARY OF DISTRIBUTION</h5>
+            <div class="sodTable">
+                <table>
+                    <tr>
+                        <th class="plLabel">PROFICIENCY LEVEL</th>
+                        <th class="freqLabel">FREQUENCY</th>
+                        <th class="percentLabel">%</th>
+                        <th class="remarksLabel">REMARKS</th>
+                    </tr>
+                    <tr>
+                        <th class="empty"></th>
+                        <th class="empty"></th>
+                        <th class="empty"></th>
+                        <th class="empty"></th>
+                    </tr>
+                    <tr>
+                        <td>Advanced >= 90</td>
+                        <td>1</td>
+                        <td>2.38</td>
+                        <td>The students have submitted all the assessment with excellent application of knowledge and skills</td>
+                    </tr>
+                    <tr>
+                        <td>Proficient 85 - 89</td>
+                        <td>1</td>
+                        <td>2.23</td>
+                        <td>The student have submitted all the requirements with above average application of knowledge and skills</td>
+                    </tr>
+                    <tr>
+                        <td>Approaching Proficient 80 - 84</td>
+                        <td>0</td>
+                        <td>0.00</td>
+                        <td>The student did not fully submit most of their assessments with average skills and practice</td>
+                    </tr>
+                    <tr>
+                        <td>Developing 75 - 79</td>
+                        <td>0</td>
+                        <td>0.00</td>
+                        <td>The student did not fully submit most of their assessments with average skills and practice</td>
+                    </tr>
+                    <tr>
+                        <td>Beginning &lt; 75</td>
+                        <td>41</td>
+                        <td>99.9</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Incomplete</td>
+                        <td>0</td>
+                        <td>0.00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dropped</td>
+                        <td>0</td>
+                        <td>0.00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL</td>
+                        <td>42</td>
+                        <td>100.00</td>
+                        <td></td>
+                    </tr>
+                
+                </table>
+            </div>
+        -->
+        </div>
+        <!--==== working but not wrapped inside iframe =====
+        <div class="testing">
+            <h1>hell world</h1>
+            <div class="header"></div>
+            <div class="tableContainer"></div>
+        </div>
+        -->
+    </div>
+    <!-- ======try muna static table layout======
+        <h1>class record</h1>
+        <table>
+            <tr class="first-row">
+                <th>SN</th>
+                <th>Learners' Names</th>
+                <th>LRN</th>
+                <th colspan="12">WRITTEN WORKS</th>
+                <th colspan="5">PERFORMANCE TASKS</th>
+                <th colspan="3">MIDTERM EXAMINATION</th>
+                <th colspan="5">MIDTERM RATING</th>
+            </tr>
+            <tr class="second-row">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th colspan="9">ASSIGNMENTS/SEATWORKS/QUIZZES</th>
+                <th class="subtotalLabel" rowspan="2">ST</th>
+                <th class="ratingsLabel" rowspan="2">R</th>
+                <th class="rateLabel" rowspan="2">%</th>
+                <th colspan="2">OUPUTS/ACTIVITIES/CL</th>
+                <th class="subtotalLabel" rowspan="2">ST</th>
+                <th class="ratingsLabel" rowspan="2">R</th>
+                <th class="rateLabel" rowspan="2">%</th>
+                <th class="subtotalLabel" rowspan="2">S</th>
+                <th class="ratingsLabel" rowspan="2">R</th>
+                <th class="rateLabel" rowspan="2">%</th>
+                <th rowspan="3">INITIAL GRADE</th>
+                <th rowspan="3">GRADE</th>
+                <th rowspan="3">PL</th>
+                <th rowspan="3">RANK</th>
+                <th rowspan="3">REMARKS</th>
+            </tr>
+            <tr class="third-row">
+                <td class="taskLabel" colspan="3">Date accomplished</td>
+                <td class="taskNum">1</td>
+                <td class="taskNum">2</td>
+                <td class="taskNum">3</td>
+                <td class="taskNum">4</td>
+                <td class="taskNum">5</td>
+                <td class="taskNum">6</td>
+                <td class="taskNum">7</td>
+                <td class="taskNum">8</td>
+                <td class="taskNum">9</td>
+                <td class="taskNum">1</td>
+                <td class="taskNum">2</td>
+            </tr>
+            <tr class="fourth-row">
+                <td class="hpsLabel" colspan="3">Highest Posible score</td>
+                <td class="hpsValue">15</td>
+                <td class="hpsValue">10</td>
+                <td class="hpsValue">10</td>
+                <td class="hpsValue">15</td>
+                <td class="hpsValue">20</td>
+                <td class="hpsValue">10</td>
+                <td class="hpsValue">30</td>
+                <td class="hpsValue">10</td>
+                <td class="hpsValue">20</td>
+                <td class="wwSubtotal">140</td>
+                <td class="wwRatings">100</td>
+                <td class="wwComponentRate">35%</td>
+                <td>40</td>
+                <td>100</td>
+                <td class="ptSubtotal">140</td>
+                <td class="ptRatings">100</td>
+                <td class="ptComponentRate">45%</td>
+                <td class="examSubtotal">60</td>
+                <td class="examRatings">100</td>
+                <td class="examComponentRate">20%</td>
+            </tr>
+            <tr class="fifth-row">
+                <td class="sn">1</td>
+               
+                <td class="studentName">Amboy, Kerby Jeff B.</td>
+                
+                <td class="lrn">107957120042</td>
+               
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>14</td>
+                <td>18</td>
+                <td>10</td>
+                <td>29</td>
+                <td>10</td>
+                <td>20</td>
+                
+                <td class="wwSubtotalValue">131</td>
+                
+                <td class="wwRatingsValue">92</td>
+               
+                <td class="wwRateValue">30.12</td>
+               
+                <td>40</td>
+                <td>99</td>
+                
+                <td class="ptSubtotalValue">139</td>
+                
+                <td class="ptRatingsValue">99</td>
+                
+                <td class="ptRateValue">45.99</td>
+                
+                <td class="examSubtotalValue">55</td>
+                
+                <td class="examRatingsValue">95</td>
+                
+                <td class="examRateValue">18.99</td>
+                
+                <td class="initialGrade">95.01</td>
+                
+                <td class="finalGrade">95</td>
+                
+                <td class="proficiencyLevel">A</td>
+              
+                <td class="rank">1</td>
+                
+                <td class="remark">P</td>
+            </tr>
+        </table>
+    -->
+    <script src="/javascript/classRecord.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.1/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeSync: Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/images/scclogo.webp">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <div class="maincon">
+        <div class="sideBar">
+            <div class="header--sb">
+                <img src="/images/scclogo.webp" alt="scclogo">
+                <h1>GRADESYNC: GRADE MANAGEMENT INFORMATION SYSTEM</h1>
+            </div>
+            <div class="itemLinks--sb">
+                <a class="dashboardSec" href="/adminDashboard">
+                    <img src="/images/dashboard.png" alt="hlogo">
+                    <h1>DASHBOARD</h1>
+                </a>
+                 <!--
+                <a class="recordSec" href="/adminRecord">
+                    <img src="/images/folder.png" alt="rlogo">
+                    <h1>CLASS RECORDS</h1>
+                </a>
+            -->
+                <a class="pendingSec" href="/adminForApproval">
+                    <img src="/images/pending.png">
+                    <h1>FOR APPROVAL</h1>
+                </a>
+                <a class="approvedSec" href="/adminApproved">
+                    <img src="/images/rejected.png">
+                    <h1>APPROVED RECORDS</h1>
+                </a>
+                <a class="disapprovedSec" href="/adminDisapproved">
+                    <img src="/images/approved.png">
+                    <h1>DISAPPROVED RECORDS</h1>
+                </a>
+                <a class="facultySec" href="/adminFaculty">
+                    <img src="/images/group (1).png">
+                    <h1>FACULTY</h1>
+                </a>
+            </div>
+            <div class="accountSec">
+                <img src="/images/profile-user.png" alt="accountlogo">
+                <!--<a href="/auth/logout">--><p id="account">Logout Admin</p></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainHeader">
+                <h1>ADMIN DASHBOARD</h1>
+            </div>
+            <div class="dashboardContent">
+                <div class="dashgrid">
+                    <div>
+                        <div class="classes">
+                            <h2><a id="linkClass" href="#">Classes</a></h2>
+                            <img class="dashicon" src="/images/graduate.png">
+                        </div>
+                        <hr>
+                        <h1 class="totalClasses"></h1>
+                    </div>
+                    <div>
+                        <div class="records">
+                            <h2><a id="link" href="/adminRecord">Class Records</a></h2>
+                            <img class="dashicon" src="/images/folder.png">
+                        </div>
+                        <hr>
+                        <h1 class="totalRecords"></h1>
+                    </div>
+                    <div>
+                        <div class="teachers">
+                            <h2><a id="link" href="/adminFaculty">Teachers</a></h2>
+                            <img class="dashicon" src="/images/teacher.png">
+                        </div>
+                        <hr>
+                        <h1 class="totalTeachers"></h1>
+                    </div>
+                    <div>
+                        <div class="approved">
+                            <h2><a id="link" href="/adminApproved">Approved Records</a></h2>
+                            <img class="dashicon" src="/images/approved.png">
+                        </div>
+                        <hr>
+                        <h1 class="totalApproves"></h1>
+                    </div>
+                    <div>
+                        <div class="disapproved">
+                            <h2><a id="link" href="/adminDisapproved">Disapproved Records</a></h2>
+                            <img class="dashicon" src="/images/rejected.png">
+                        </div>
+                        <hr>
+                        <h1 class="totalDisapproves"></h1>
+                    </div>
+                    <div>
+                        <div class="pending">
+                            <h2><a id="link" href="/adminForApproval">Pending Records</a></h2>
+                            <img class="dashicon" src="/images/pending.png">
+                        </div>
+                        <hr>
+                        <h1 class="totalPending"></h1>
+                    </div>
+                </div>
+                <img id="logo" src="/images/scclogo.webp">
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/admin-dashboard.js"></script>
+</body>
+</html>

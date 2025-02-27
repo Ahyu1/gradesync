@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeSync: Faculty</title>
+    <link rel="icon" type="image/x-icon" href="/images/scclogo.webp">
+    <link rel="stylesheet" href="/css/admin-faculty.css">
+</head>
+<body>
+    <div class="maincon">
+        <div class="sideBar">
+            <div class="header--sb">
+                <img src="/images/scclogo.webp" alt="scclogo">
+                <h1>GRADESYNC: GRADE MANAGEMENT INFORMATION SYSTEM</h1>
+            </div>
+            <div class="itemLinks--sb">
+                <a class="dashboardSec" href="/adminDashboard">
+                    <img src="/images/dashboard.png" alt="hlogo">
+                    <h1>DASHBOARD</h1>
+                </a>
+                <!--
+                <a class="recordSec" href="/adminRecord">
+                    <img src="/images/folder.png" alt="rlogo">
+                    <h1>CLASS RECORDS</h1>
+                </a>
+            -->
+                <a class="pendingSec" href="/adminForApproval">
+                    <img src="/images/pending.png">
+                    <h1>FOR APPROVAL</h1>
+                </a>
+                <a class="approvedSec" href="/adminApproved">
+                    <img src="/images/rejected.png">
+                    <h1>APPROVED RECORDS</h1>
+                </a>
+                <a class="disapprovedSec" href="/adminDisapproved">
+                    <img src="/images/approved.png">
+                    <h1>DISAPPROVED RECORDS</h1>
+                </a>
+                <a class="facultySec" href="/adminFaculty">
+                    <img src="/images/group (1).png">
+                    <h1>FACULTY</h1>
+                </a>
+            </div>
+            <div class="accountSec">
+                <img src="/images/profile-user.png" alt="accountlogo">
+                <!--<a href="/auth/logout">--><p id="account">Logout Admin</p></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainHeader">
+                <h1>FACULTY MEMBERS</h1>
+            </div>
+            <div class="content"></div>
+        </div>
+    </div>
+    
+    <script src="/javascript/admin-faculty.js"></script>
+</body>
+</html>

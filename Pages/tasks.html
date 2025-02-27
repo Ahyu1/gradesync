@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tasks.css">
+    <link rel="icon" type="image/x-icon" href="/images/scclogo.webp">
+    <title>GradeSync: Tasks</title>
+</head>
+<body>
+    <div class="maincon"></div>
+    <div class="sideBar">
+        <div class="header--sb">
+            <img src="/images/scclogo.webp" alt="scclogo">
+            <h1>GRADESYNC: GRADE MANAGEMENT INFORMATION SYSTEM</h1>
+        </div>
+        <div class="itemLinks--sb">
+            <a class="homeSec" href="/main">
+                <img src="/images/graduate.png" alt="hlogo">
+                <h1>CLASS</h1>
+            </a>
+            <a class="recordSec" href="/recordPage">
+                <img src="/images/folder.png" alt="rlogo">
+                <h1>RECORDS</h1>
+            </a>
+            <a class="pendingSec" href="/pendingPage">
+                <img src="/images/pending.png" alt="rlogo">
+                <h1>SUBMITTED RECORDS</h1>
+            </a>
+            <a class="approvedSec" href="/approvedPage">
+                <img src="/images/approved.png" alt="rlogo">
+                <h1>APPROVED RECORDS</h1>
+            </a>
+            <a class="disapprovedSec" href="/disapprovedPage">
+                <img src="/images/rejected.png" alt="rlogo">
+                <h1>DISAPPROVED RECORDS</h1>
+            </a>
+        </div>
+        <div class="accountSec">
+            <img src="/images/profile-user.png" alt="accountlogo">
+            <!--<a href="/auth/logout">--><p class="account">Account/Logout</p>
+        </div>
+    </div>
+    <div class="main">
+        <button class="back"><img src="/images/back.png" alt="back-icon"></button>
+        <div class="mainHeader">
+            <h1 class="taskSection"></h1><!--TO FIX-->
+            <input type="text" class="searchStudentName" placeholder="&#128269; Search Student: ">
+        </div>
+        <div class="container">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>STUDENT NAME</th>
+                        <th>SCORE</th>
+                        <th>MAX SCORE</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Table rows will be dynamically generated -->
+                </tbody>
+            </table>
+            <button class="saveButton">Update Scores</button>
+        </div>
+    </div>
+
+    <!--
+    {
+  "group1": [
+    { "taskName": "activity 1", "maxScore": 12 },
+    { "taskName": "seatwork 2", "maxScore": 60 }
+  ],
+  "group2": [
+    { "taskName": "pt 1", "maxScore": 12 },
+    { "taskName": "pt 2", "maxScore": 40 }
+  ],
+  "group3": [
+    { "taskName": "midterm", "maxScore": 12 }
+  ]
+}
+    -->
+    <script src="/javascript/tasks.js"></script>
+</body>
+</html>
