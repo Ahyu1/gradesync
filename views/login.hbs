@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="icon" type="image/x-icon" href="/images/scclogo.webp">
+    <title>GradeSync Login Page</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="mainContainer"> 
+        <div class="header">
+            <div>
+                <img src="/images/scclogo.webp" alt="logo">
+                <h1>GRADESYNC: GRADING MANAGEMENT INFORMATION SYSTEM </h1>
+            </div>
+            <img src="/images/info.png" alt="infoIcon" class="info">
+        </div>
+        <div class="loginContainer">
+            <form action="/auth/login" method="POST">
+                <div class="logHeader">
+                    <h1>LOGIN FORM</h1>
+                </div>
+                <!--
+                <div class="radioSec">
+                    <input type="radio" id="teacher" name="typeOfUser" value="TEACHER">
+                    <label for="teacher">Teacher</label>
+                    <input type="radio" id="admin" name="typeOfUser" value="ADMIN">
+                    <label for="teacher">Admin</label>
+                </div>
+                -->
+                <div class="emailSec">
+                    <img src="/images/user (1).png" alt="usernameIcon">
+                    <input type="text" placeholder="Username" id="email" name="username">
+                </div>
+                <div class="passSec">
+                    <img src="/images/padlock.png" alt="passIcon"> 
+                    <input type="password" placeholder="Password" id="password" name="password">
+                </div>
+                <p class="forgotPass">Forgot password?</p>
+                <input type="submit" id="loginBtn" value="LOGIN">
+                <p>Don't have an account yet? <a href="/register" target="_self"><scan id="register">Register here</scan></a></p>
+            </form>
+            <div class="fpContainer">
+                
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/login.js"></script>
+</body>
+    
 
+</html>

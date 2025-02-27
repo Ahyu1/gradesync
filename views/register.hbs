@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="icon" type="image/x-icon" href="/images/scclogo.webp">
+    <title>GradeSync Registration Page</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="mainContainer"> 
+        <div class="header">
+            <div>
+                <img src="/images/scclogo.webp" alt="logo">
+                <h1>GRADESYNC: GRADING MANAGEMENT INFORMATION SYSTEM </h1>
+            </div>
+            <img src="/images/info.png" alt="infoIcon" class="info">
+        </div>
+        <div class="registerContainer">
+            <form id="registerForm" action="/auth/register" method="POST">
+                <div class="logHeader">
+                    <!--<img src="picture.png" alt="loginIcon">-->
+                    <h1>REGISTRATION FORM</h1>
+                </div>
+                <div class="label--input">
+                    <div class="l--o--left">
+                        <label for="fullName">Full Name:</label>
+                        <input id="fullName" type="text" name="fullName" placeholder="Enter:">
+                        <label for="employeeID">Employee ID:</label>
+                        <input id="employeeID" type="text" name="employeeID" placeholder="Enter:">
+                        <label for="department">Department:</label>
+                        <select id="department" name="department">
+                            <option>Select: </option>
+                            <option>Senior High School (SHS)</option>
+                            <option>Junior High School (JHS)</option>
+                        </select>
+                    </div>
+                    <div class="l--o--right">
+                        <label for="username">Username:</label>
+                        <input id="username" type="text" name="username" placeholder="Enter:">
+                        <label for="password">Password:</label>
+                        <input id="password" type="text" name="password" placeholder="Enter:">
+                        <label for="advisory">Advisory:</label>
+                        <select id="advisory" name="advisory">
+                            <option>Select: </option>
+                            <option>None</option>
+                            <option>Almond</option>
+                            <option>Algum</option>
+                            <option>Amethyst</option>
+                            <option>Apollos</option>
+                            <option>Ararat</option>
+                            <option>Beryl</option>
+                            <option>Bethany</option>
+                            <option>Carmel</option>
+                            <option>Carob</option>
+                            <option>Cassia</option>
+                            <option>Cedar</option>
+                            <option>Citron</option>
+                            <option>Caper</option>
+                            <option>Capernaum</option>
+                            <option>Chrysolite</option>
+                            <option>Crocus</option>
+                            <option>Cypress</option>
+                            <option>David</option>
+                            <option>Ephraim</option>
+                            <option>Emerald</option>
+                            <option>Gerizim</option>
+                            <option>Gethsemane</option>
+                            <option>Gilead</option>
+                            <option>Hermon</option>
+                            <option>Hezekiah</option>
+                            <option>Horeb</option>
+                            <option>Jerusalem</option>
+                            <option>Jotham</option>
+                            <option>Josiah</option>
+                            <option>Jehoshaphat</option>
+                            <option>Jasper</option>
+                            <option>Mizar</option>
+                            <option>Moriah</option>
+                            <option>Myrtle</option>
+                            <option>Nebo</option>
+                            <option>Nehemiah</option>
+                            <option>Onesimus</option>
+                            <option>Olivet</option>
+                            <option>Philemon</option>
+                            <option>Perea</option>
+                            <option>Poplar</option>
+                            <option>Samaria</option>
+                            <option>Sapphire</option>
+                            <option>Shepher</option>
+                            <option>Sinai</option>
+                            <option>Silvanus</option>
+                            <option>Tabor</option>
+                            <option>Tamarix</option>
+                            <option>Timothy</option>
+                            <option>Zion</option>
+                            <option>Zechariah</option>
+
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" id="registerBtn" value="SUBMIT">
+                <p>Already have an account? <a href="/login" target="_self"><scan id="login">Login here</scan></a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="/javascript/register.js"></script>
+</body>
+</html>
